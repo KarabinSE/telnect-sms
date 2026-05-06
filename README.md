@@ -1,9 +1,8 @@
 # Telnect SMS Notifications Channel for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-notification-channels/telnect-sms.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/telnect-sms)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/karabinse/telnect-sms.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/telnect-sms)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/laravel-notification-channels/telnect-sms/master.svg?style=flat-square)](https://travis-ci.org/laravel-notification-channels/telnect-sms)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/telnect-sms.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/telnect-sms)
+[![Total Downloads](https://img.shields.io/packagist/dt/karabinse/telnect-sms.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/telnect-sms)
 
 This package makes it easy to send notifications using [TelnectSms](link to service) with Laravel 10.x. Tested on PHP 8.4 and PHP 8.5.
 
@@ -25,7 +24,7 @@ This package provides a Laravel notification channel for sending SMS messages vi
 
 ## Installation
 ```
-composer require laravel-notification-channels/telnect-sms --update-with-dependencies
+composer require karabinse/telnect-sms --update-with-dependencies
 ```
 
 ### Setting up the TelnectSms service
@@ -53,8 +52,8 @@ Now you can use the channel in your via() method inside the notification:
 ```
 <?php
 
-use Karabin\TelnectSms\SnsChannel;
-use Karabin\TelnectSms\SnsMessage;
+use Karabin\TelnectSms\TelnectSmsChannel;
+use Karabin\TelnectSms\TelnectSmsMessage;
 use Illuminate\Notifications\Notification;
 
 class AccountApproved extends Notification
