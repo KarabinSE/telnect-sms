@@ -66,7 +66,7 @@ class AccountApproved extends Notification
     public function toTelnectSms($notifiable)
     {
         return TelnectSmsMessage::create()
-            ->body("Your account is created and ready to be used")
+            ->body('Your account is created and ready to be used')
             ->sender('MyBusiness');
     }
 }
