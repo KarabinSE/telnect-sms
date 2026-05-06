@@ -1,12 +1,12 @@
 <?php
 
-namespace NotificationChannels\TelnectSms;
+namespace Karabin\TelnectSms;
 
 use GuzzleHttp\Client as GuzzleClient;
 use Illuminate\Support\Arr;
-use NotificationChannels\TelnectSms\Events\SmsSendingFailedEvent;
-use NotificationChannels\TelnectSms\Events\SmsSentSuccessfullyEvent;
-use NotificationChannels\TelnectSms\Exceptions\CouldNotSendNotification;
+use Karabin\TelnectSms\Events\SmsSendingFailedEvent;
+use Karabin\TelnectSms\Events\SmsSentSuccessfullyEvent;
+use Karabin\TelnectSms\Exceptions\CouldNotSendNotification;
 
 class TelnectSmsClient
 {

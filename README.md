@@ -7,11 +7,7 @@
 
 This package makes it easy to send notifications using [TelnectSms](link to service) with Laravel 10.x. Tested on PHP 8.4 and PHP 8.5.
 
-**Note:** Replace ```TelnectSms``` ```TelnectSms``` ```Karabin AB``` ```KarabinSE``` ```https://karabin.se``` ```info@karabin.se``` ```TelnectSms``` ```Send SMS text message using Telnect API``` ```:style_ci_id``` ```:sensio_labs_id``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md), [composer.json](composer.json) and other files, then delete this line.
-
 This package provides a Laravel notification channel for sending SMS messages via the [Telnect](https://telnect.com) API. It integrates with Laravel's notification system, allowing you to send SMS notifications by adding the `TelnectSms` channel to your notifiable classes.
-
-
 
 ## Contents
 
@@ -57,8 +53,8 @@ Now you can use the channel in your via() method inside the notification:
 ```
 <?php
 
-use Karabin\AwsSns\SnsChannel;
-use Karabin\AwsSns\SnsMessage;
+use Karabin\TelnectSms\SnsChannel;
+use Karabin\TelnectSms\SnsMessage;
 use Illuminate\Notifications\Notification;
 
 class AccountApproved extends Notification
@@ -70,21 +66,13 @@ class AccountApproved extends Notification
 
     public function toTelnectSms($notifiable)
     {
-        return SnsMessage::create()
+        return TelnectSmsMessage::create()
             ->body("Your account is created and ready to be used")
             ->sender('MyBusiness');
     }
 }
 ```
 
-
-### Available Message methods
-
-A list of all available options
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 ## Testing
 
