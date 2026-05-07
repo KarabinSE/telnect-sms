@@ -13,8 +13,6 @@ This package provides a Laravel notification channel for sending SMS messages vi
 - [Installation](#installation)
 	- [Setting up the TelnectSms service](#setting-up-the-TelnectSms-service)
 - [Usage](#usage)
-	- [Available Message methods](#available-message-methods)
-- [Changelog](#changelog)
 - [Testing](#testing)
 - [Security](#security)
 - [Contributing](#contributing)
