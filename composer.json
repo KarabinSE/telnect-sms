@@ -37,6 +37,13 @@
         "test": "phpunit",
         "test:coverage": "phpunit --coverage-text --coverage-clover=coverage.clover"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karabin\\TelnectSms\\TelnectSmsServiceProvider"
+            ]
+        }
+    },
     "config": {
         "sort-packages": true
     }
